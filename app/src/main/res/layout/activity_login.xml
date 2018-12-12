@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="#A8E5F8">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <Button
+            android:textColor="@android:color/white"
+            android:id="@+id/button_login"
+            android:background="@drawable/bg_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="账号登录"/>
+
+        <Button
+            android:textColor="@android:color/white"
+            android:id="@+id/button_login2"
+            android:layout_above="@+id/button_login"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册新用户"/>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:layout_above="@+id/button_login2"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+        <ImageView
+
+            android:layout_above="@+id/tv_login" android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/people"
+            android:layout_marginBottom="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他方式登录"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            >
+            <ImageView
+                android:id="@+id/pic_wechat"
+                android:src="@drawable/wechat"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/pic_qq"
+                android:src="@drawable/qq"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/pic_weibo"
+                android:src="@drawable/weibo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
